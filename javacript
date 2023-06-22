@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Currículum Vitae</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    h2 {
+      margin-bottom: 10px;
+    }
+    
+    p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mi Currículum Vitae</h1>
+  
+  <h2>Información personal</h2>
+  <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+  <p><strong>Ubicación:</strong> <span id="ubicacion"></span></p>
+  <p><strong>Correo electrónico:</strong> <span id="correo"></span></p>
+  <p><strong>Sitio web:</strong> <span id="sitio-web"></span></p>
+  
+  <h2>Resumen</h2>
+  <p id="resumen"></p>
+  
+  <h2>Experiencia laboral</h2>
+  <ul id="experiencia-laboral"></ul>
+  
+  <h2>Idiomas</h2>
+  <ul id="idiomas"></ul>
+  
+  <script>
+    // Obtener referencias a los elementos del DOM
+    const nombreElement = document.getElementById('nombre');
+    const ubicacionElement = document.getElementById('ubicacion');
+    const correoElement = document.getElementById('correo');
+    const sitioWebElement = document.getElementById('sitio-web');
+    const resumenElement = document.getElementById('resumen');
+    const experienciaLaboralElement = document.getElementById('experiencia-laboral');
+    const idiomasElement = document.getElementById('idiomas');
+    
+    // Datos de ejemplo
+    const datos = {
+      nombre: 'Joaquin Behrens',
+      ubicacion: 'Buenos Aires, Argentina',
+      correo: 'joaquinbehrens@gmail.com',
+      sitioWeb: '@joacolp22',
+      resumen: 'Estudiante de artes plásticas, incursionando en el mundo del diseño digital.',
+      experienciaLaboral: [
+        {
+          empresa: 'Pamplona Resto Bar',
+          cargo: 'Ayudante de cocina',
+          fecha: '2015 - 2017',
+          descripcion: 'Realizaba tareas como pelar papas, lavar copas, limpieza de la cocina.'
+        }
+      ],
+      idiomas: [
+        {
+          idioma: 'Inglés',
+          nivel: 'Intermedio'
+        },
+        {
+          idioma: 'Portugués',
+          nivel: 'Básico'
+        }
+      ]
+    };
+    
+    // Actualizar los elementos del DOM con los datos
+    nombreElement.textContent = datos.nombre;
+    ubicacionElement.textContent = datos.ubicacion;
+    correoElement.textContent = datos.correo;
+    sitioWebElement.textContent = datos.sitioWeb;
+    resumenElement.textContent = datos.resumen;
+    
+    // Crear elementos de experiencia laboral y agregarlos al DOM
+    datos.experienciaLaboral.forEach(experiencia => {
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${experiencia.empresa}</strong> - ${

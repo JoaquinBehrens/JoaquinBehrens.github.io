@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Currículum Vitae</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    h2 {
+      margin-bottom: 10px;
+    }
+    
+    p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mi Currículum Vitae</h1>
+  
+  <h2>Información personal</h2>
+  <p><strong>Nombre:</strong> [Joaquin Behrens]</p>
+  <p><strong>Ubicación:</strong> [Buenos Aires, Argentina]</p>
+  <p><strong>Correo electrónico:</strong> [joaquinbehrens@gmail.com]</p>
+  <p><strong>Sitio web:</strong> [@joacolp22]</p>
+  
+  <h2>Resumen</h2>
+  <p>Estudiante de artes plásticas, incursionando en el mundo del diseño digital.</p>
+  
+  <h2>Experiencia laboral</h2>
+  <p><strong>[Pamplona Resto Bar]</strong> - [ayudante de cocina]</p>
+  <p><strong>Fecha:</strong> [2015] - [2017]</p>
+  <p>[realizaba tareas como pelar papas, lavar copas, limpieza de la cocina.]</p>
+  
+  <h2>Idiomas</h2>
+  <p><strong>Ingles 1:</strong> [Nivel]</p>
+  <p><strong>Portugués 2:</strong> [Nivel]</p>
+</body>
+</html>
